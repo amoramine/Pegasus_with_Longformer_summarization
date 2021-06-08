@@ -1,6 +1,6 @@
 # pegasus_longformer
 
-To run this project, clone the repo and run the following commands:
+To run this project, clone the repo and execute the following commands:
 
 1) cd pegasus_longformer
 2) pip install -r requirements.txt
