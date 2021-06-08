@@ -9,9 +9,9 @@ import tensorflow as tf
 #from longformer.longformer_encoder_decoder import LongformerEncoderDecoderConfig
 #from longformer.longformer_encoder_decoder import LongformerEncoderDecoderForConditionalGeneration
 
-from pegasus_script import LongformerSelfAttentionForPegasus
-from pegasus_script import LongformerEncoderDecoderConfig
-from pegasus_script import LongformerEncoderDecoderForConditionalGeneration
+from longformer_for_pegasus import LongformerSelfAttentionForPegasus
+from longformer_for_pegasus import LongformerEncoderDecoderConfig
+from longformer_for_pegasus import LongformerEncoderDecoderForConditionalGeneration
 
 
 from transformers.modeling_longformer import LongformerSelfAttention 
