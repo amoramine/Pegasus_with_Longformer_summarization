@@ -1,0 +1,6 @@
+torch==1.8.1   
+tensorflow==2.5.0
+transformers==3.5.1
+wheel==0.36.2
+datasets==1.7.0
+fairscale==0.3.7
