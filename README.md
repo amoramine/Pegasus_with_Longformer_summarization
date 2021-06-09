@@ -11,4 +11,5 @@ To run this project, clone the repo and execute the following commands:
 7) git clone -b v4.5.1-release https://github.com/huggingface/transformers
 8) cd transformers
 9) pip install -e . 
-10) bash tune.sh
+10) python download_long_Big_Patent_data.py 
+11) bash tune.sh
