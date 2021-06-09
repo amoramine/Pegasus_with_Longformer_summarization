@@ -3,8 +3,8 @@ python -m torch.distributed.launch \
 --model_name_or_path Pegasus_4k/ \
 --do_train \
 --do_eval \
---train_file /data/Big_Patent/long_docs/train.json \
---validation_file /data/Big_Patent/long_docs/val.json \
+--train_file train.json \
+--validation_file val.json \
 --output_dir saved/ \
 --per_device_train_batch_size=2 \
 --per_device_eval_batch_size=2 \
