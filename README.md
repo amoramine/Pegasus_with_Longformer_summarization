@@ -1,12 +1,12 @@
 # Pegasus_Longformer_summarization
 
+## Description
+
 Pegasus is a large Transformer-based encoder-decoder model with a new pre-training objective which is adapted to abstractive summarization. More specifically, the pre-training objective, called "Gap Sentence Generation (GSG)", consists of masking important sentences from a document and generating these gap-sentences.
 
 On the other hand, the Longformer is a Transformer which replaces the full-attention mechanism (quadratic dependency) with a novel attention mechanism which scale linearly with the input sequence length. Consequently, Longformer can process sequences up to 4,096 tokens long (8 times longer than BERT which is limited to 512 tokens).
 
-This project plugs Longformer's attention mechanism to Pegasus in order to perform abstractive summarization on long documents. The conversion is done in loading_scripts/Pegasus_to_4k.py which enables Pegasus to process sequences up to 4,096 tokens long (rather than 512 tokens). Note that the `max_pos` parameter can be changed to accept even longer sequences (e.g `max_pos=16384`).
-
-## Description
+This project plugs Longformer's attention mechanism to Pegasus in order to perform abstractive summarization on long documents. The conversion is done in loading_scripts/Pegasus_to_4k.py which enables Pegasus to process sequences up to 4,096 tokens long (rather than 512 tokens). Note that the `max_pos` parameter can be changed to accept even longer sequences (e.g `max_pos=16384`). The new Pegasus model is then fine-tuned on a subset of BigPatent dataset which keep training examples where text_length > 4000 tokens.
 
 ## How to run the project
 To run this project, clone the repo and execute the following commands:
