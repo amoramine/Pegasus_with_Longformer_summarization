@@ -8,7 +8,7 @@ On the other hand, the Longformer is a Transformer which replaces the full-atten
 
 This project plugs Longformer's attention mechanism to Pegasus in order to perform abstractive summarization on long documents. The conversion is done in loading_scripts/Pegasus_to_4k.py which enables Pegasus to process sequences up to 4,096 tokens long (rather than 512 tokens). Note that the `max_pos` parameter can be changed to accept even longer sequences (e.g `max_pos=16384`). The new Pegasus model is then fine-tuned on a subset of BigPatent dataset which keep training examples where text_length > 4000 tokens.
 
-This project was built using HuggingFace library.
+This project was built using HuggingFace's Transformers library.
 
 ## How to run the project
 To run this project, clone the repo and execute the following commands:
