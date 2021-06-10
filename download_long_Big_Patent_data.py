@@ -24,7 +24,7 @@ num_val = 0
 for i in range(num_rows):
     text = dataset[subset][i]['description']
     text_length = len(text.split(" "))
-    if text_length > 10000:
+    if text_length > 4000:
         r = random.random()
         if 0.9 < r and num_test < 2000:
             group = "test"
