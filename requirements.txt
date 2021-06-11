@@ -5,3 +5,4 @@ transformers==3.5.1
 wheel==0.36.2
 datasets==1.7.0
 fairscale==0.3.7
+tokenizers==0.10.3
