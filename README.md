@@ -1,4 +1,4 @@
-# Pegasus_Longformer_summarization
+# Pegasus_with_Longformer_summarization
 
 ## Description
 
@@ -13,7 +13,7 @@ This project was built using HuggingFace's Transformers library. The model is tr
 ## How to run the project
 To run this project, clone the repo and execute the following commands:
 
-1) `cd pegasus_longformer`
+1) `cd Pegasus_with_Longformer_summarization`
 2) `pip install -r requirements.txt`
 3) `pip install git+https://github.com/allenai/longformer.git`
 4) `pip install --upgrade tokenizers`
