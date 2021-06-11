@@ -36,7 +36,7 @@ To run this project, clone the repo and execute the following commands:
                Anthony Moi and
                Pierric Cistac and
                Tim Rault and
-               R{\'{e}}mi Louf and
+               Rémi Louf and
                Morgan Funtowicz and
                Jamie Brew},<br/>
 &nbsp;&nbsp;&nbsp;&nbsp;  title     = {HuggingFace's Transformers: State-of-the-art Natural Language Processing},<br/>
