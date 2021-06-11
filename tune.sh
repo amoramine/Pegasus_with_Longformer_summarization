@@ -14,4 +14,5 @@ python -m torch.distributed.launch \
 --save_steps 1000 
 --save_total_limit 10 \
 --num_train_epochs 90 \
---evaluation_strategy epoch 
+--evaluation_strategy epoch \
+--fp16
