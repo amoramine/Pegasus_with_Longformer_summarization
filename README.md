@@ -17,13 +17,14 @@ To run this project, clone the repo and execute the following commands:
 2) `pip install -r requirements.txt`
 3) `pip install git+https://github.com/allenai/longformer.git`
 4) `pip install tokenizers==0.10.3`
-5) `comment out "import 'SAVE_STATE_WARNING' from torch.optim.lr_scheduler" in lib/python3.7/site-packages/transformers/trainer_pt_utils.py`
-6) `python loading_scripts/pegasus_to_4k.py`
-7) `git clone -b v4.5.1-release https://github.com/huggingface/transformers`
-8) `cd transformers`
-9) `pip install -e .` 
-10) `python download_long_Big_Patent_data.py` 
-11) `bash tune.sh`
+5) Comment out `import 'SAVE_STATE_WARNING' from torch.optim.lr_scheduler` in lib/python3.7/site-packages/transformers/trainer_pt_utils.py
+6) Add `with torch.no_grad():` above `out[:, 0 : dim // 2] = torch.FloatTensor(np.sin(position_enc[:, 0::2]))` in lib/python3.7/site-packages/transformers/modeling_bart.py
+7) `python loading_scripts/pegasus_to_4k.py`
+8) `git clone -b v4.5.1-release https://github.com/huggingface/transformers`
+9) `cd transformers`
+10) `pip install -e .` 
+11) `cd .. ; python download_long_Big_Patent_data.py` 
+12) `bash tune.sh`
 
 ## Citation
 
