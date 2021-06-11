@@ -1,3 +1,4 @@
+pip==21.1.2
 torch==1.8.1   
 tensorflow==2.5.0
 transformers==3.5.1
